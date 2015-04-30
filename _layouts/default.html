@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="logo"><img src="/assets/asboot-logo.png"/></a>
+
+          <div class="info">
+            <h1 class="name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+            <h2 class="tagline">{{ site.tagline }}</h2>
+          </div>
+
+          <nav>
+            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/news">News</a>
+            <a href="{{ site.baseurl }}/download">Download</a>
+          </nav>
+      </header>
+     
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer class=" footer">
+        <small>
+          <p class="copyleft">Copyleft</p> <p class="copyleft-logo">&copy;</p> {{ site.time | date: '%Y' }}. All rights reversed.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
