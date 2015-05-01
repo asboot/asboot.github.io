@@ -6,7 +6,7 @@ relative_permalinks: true
 
 # Setup
 title:               Asboot
-tagline:             As long as it can booting, that is fine.
+tagline:             As long as it can boot, that is fine.
 url:                 http://getpoole.com
 paginate:            1
 baseurl:             ""
