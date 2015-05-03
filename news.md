@@ -3,6 +3,7 @@ layout: page
 title: News
 ---
 
+{% if site.categories.release != release %}
 <span class="cat release">release</span>
 <ul>
 	{% for release in site.categories.release %}
@@ -11,7 +12,9 @@ title: News
 		</li>
 	{% endfor %}
 </ul>
+{% endif %}
 
+{% if site.categories.update != update %}
 <span class="cat update">update</span>
 <ul>
 	{% for update in site.categories.update %}
@@ -20,7 +23,9 @@ title: News
 		</li>
 	{% endfor %}
 </ul>
+{% endif %}
 
+{% if site.categories.bug != bug %}
 <span class="cat bug">bug</span>
 <ul>
 	{% for bug in site.categories.bug %}
@@ -29,3 +34,4 @@ title: News
 		</li>
 	{% endfor %}
 </ul>
+{% endif %}
