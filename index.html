@@ -12,7 +12,20 @@ title: Home
       </a>
     </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    <div class ="meta-data">
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+      {% for cat in post.categories %}
+        {% if cat == "release" %}
+          <span class="cat release">{{ cat }}</a></span>
+        {% else %} {% if cat == "update" %}
+          <span class="cat update">{{ cat }}</a></span>
+        {% else %} {% if cat == "bug" %}
+          <span class="cat bug">{{ cat }}</a></span>
+        {% endif %}
+        {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
 
     {{ post.content }}
   </article>

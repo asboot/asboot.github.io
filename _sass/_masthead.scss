@@ -1,26 +1,108 @@
 // Masthead
 //
-// Super small header above the content for site name and short description.
+// Barry Clark
+// https://github.com/barryclark/jekyll-now/style.scss
 
 .masthead {
-  padding-top:    1rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
 }
 
-.masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050;
+.logo {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.info {
+  float: left;
+  margin-top: 5px;
+}
+
+.name {
+  margin: 0;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 28px;
+  
+  a {
+  color: #303030;
+  }
+}
+
+.tagline {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  color: #717171;
+}
+
+nav {
+  float: right;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-size: 18px;
 
   a {
-    color: #505050;
+    margin-left: 20px;
+    text-align: right;
+    font-weight: 300;
+    color: #303030;
   }
+}
 
-  small {
-    font-size: 75%;
-    font-weight: 400;
-    color: #c0c0c0;
-    letter-spacing: 0;
-  }
+@media (max-width: 45em) {
+    .masthead {
+      text-align: center;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .info {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .tagline {
+      margin: 3px 0;
+    }
+
+    nav {
+      float: none;
+      margin-top: 9px;
+      display: block;
+      font-size: 16px;
+
+      a {
+        margin: 0 10px;
+        color: #268bd2;
+      }
+    }
+}
+
+// Clearfix
+//
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
