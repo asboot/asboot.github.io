@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Example content
+categories: update
+permalink: /test2
 ---
 
 

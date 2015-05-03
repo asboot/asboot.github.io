@@ -7,7 +7,7 @@ relative_permalinks: true
 # Setup
 title:               Asboot
 tagline:             As long as it can boot, that is fine.
-url:                 http://getpoole.com
+url:                 http://asboot.github.io
 paginate:            1
 baseurl:             ""
 
@@ -20,11 +20,11 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Asboot
+  url:               http://asboot.github.io
+  email:             asboot.linux@gmail.com
 
 # Custom vars
 version:             1.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/asboot/asboot.github.io
