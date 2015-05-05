@@ -3,7 +3,7 @@ layout: page
 title: News
 ---
 
-{% if site.categories.release != release %}
+{% if site.categories.release %}
 <span class="cat release">release</span>
 <ul>
 	{% for release in site.categories.release %}
@@ -14,7 +14,7 @@ title: News
 </ul>
 {% endif %}
 
-{% if site.categories.update != update %}
+{% if site.categories.update %}
 <span class="cat update">update</span>
 <ul>
 	{% for update in site.categories.update %}
@@ -25,7 +25,7 @@ title: News
 </ul>
 {% endif %}
 
-{% if site.categories.bug != bug %}
+{% if site.categories.bug %}
 <span class="cat bug">bug</span>
 <ul>
 	{% for bug in site.categories.bug %}
