@@ -17,12 +17,10 @@ title: Home
       {% for cat in post.categories %}
         {% if cat == "release" %}
           <span class="cat release">{{ cat }}</a></span>
-        {% else %} {% if cat == "update" %}
+        {% elsif cat == "update" %}
           <span class="cat update">{{ cat }}</a></span>
-        {% else %} {% if cat == "bug" %}
+        {% elsif cat == "bug" %}
           <span class="cat bug">{{ cat }}</a></span>
-        {% endif %}
-        {% endif %}
         {% endif %}
       {% endfor %}
     </div>
